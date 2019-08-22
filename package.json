@@ -1,0 +1,53 @@
+{
+  "name": "react-testing-custom-wrappers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/react": "^9.1.3",
+    "@types/jest": "^24.0.18",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "jest": "^24.9.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.3"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfig": {
+          "jsx": "react",
+          "allowSyntheticDefaultImports": true,
+          "target": "es2015",
+          "moduleResolution": "node",
+          "inlineSourceMap": true
+        },
+        "diagnostics": false
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>[/\\\\](build|docs|lib|node_modules|scripts|config)[/\\\\]"
+    ],
+    "testEnvironment": "jsdom",
+    "testRegex": "/(__tests__/.*|src/.*\\.(test|spec))\\.(ts|tsx)$",
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$"
+    ]
+  }
+}
